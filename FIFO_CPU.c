@@ -26,7 +26,6 @@ void findCompletionTime(struct process *A , int n)
     A[0].ct = A[0].bt;
     for(int i = 1 ; i < n ; i++)
     {
-        int adjust = 0 ;
         if(A[i-1].ct < A[i].at)
         {
            A[i].ct = A[i].at + A[i].bt;
